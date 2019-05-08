@@ -19,11 +19,11 @@
 
 * GC_4
 
-    4 level gray full screen update
+    4 level gray full screen update, deprecated
 
 * ANIMATION
 
-    
+    black/white screen update, faster than DU, but lower quality
 
 * ANIMATION_QUALITY
 
@@ -34,3 +34,5 @@
     optimized 16 level partial update mode for text pages
 
 * REGAL_D
+
+    same as REGAL now
