@@ -282,21 +282,20 @@ public class PenStylusTouchHelperDemoActivity extends AppCompatActivity {
     };
 
     private void disableHandTouch() {
-        boolean isIgnoreHandTouch = EpdController.isTouchAreaIgnoreRegionDetect(this);
+        boolean isIgnoreHandTouch = EpdController.isCTPDisableRegion(this);
         if (!isIgnoreHandTouch) {
             int width = getResources().getDisplayMetrics().widthPixels;
             int height = getResources().getDisplayMetrics().heightPixels;
             Rect rect = new Rect(0, 0, width, height);
             Rect[] arrayRect =new Rect[]{rect};
-            EpdController.setTouchAreaIgnoreRegion(this, arrayRect);
-            EpdController.setTouchAreaIgnoreRegionDetectStatus(this, true);
+            EpdController.setAppCTPDisableRegion(this, arrayRect);
         }
     }
 
     private void enableHandTouch() {
-        boolean isIgnoreHandTouch = EpdController.isTouchAreaIgnoreRegionDetect(this);
+        boolean isIgnoreHandTouch = EpdController.isCTPDisableRegion(this);
         if (isIgnoreHandTouch) {
-            EpdController.resetTouchAreaIgnoreRegion(this);
+            EpdController.appResetCTPDisableRegion(this);
         }
 
     }

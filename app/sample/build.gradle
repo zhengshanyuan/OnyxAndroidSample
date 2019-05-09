@@ -69,7 +69,7 @@ dependencies {
     }
 
     //dependencies for others
-    compile('com.onyx.android.sdk:onyxsdk-base:1.4.3.22')
+    compile('com.onyx.android.sdk:onyxsdk-base:1.5.0')
     compile('com.onyx.android.sdk:onyxsdk-scribble:1.1.2')
     compile('com.onyx.android.sdk:onyxsdk-pen:1.0.6.13')
     compile('com.onyx.android.sdk:onyxsdk-data:1.0.1')
