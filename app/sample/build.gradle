@@ -83,7 +83,7 @@ dependencies {
     }
 
     //dependencies for others
-    compile('com.onyx.android.sdk:onyxsdk-base:1.4.6')
+    compile('com.onyx.android.sdk:onyxsdk-base:1.5.1')
     compile('com.onyx.android.sdk:onyxsdk-pen:1.0.8')
     compile('com.onyx.android.sdk:onyxsdk-data:1.1.4')
     compile('com.onyx.android.sdk:filedownload:1.0.0')
