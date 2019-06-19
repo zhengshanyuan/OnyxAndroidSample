@@ -238,6 +238,7 @@ public class Key implements Comparable<Key> {
     public Key(final Resources res, final KeyboardParams params, final KeyboardRow row,
             final XmlPullParser parser) throws XmlPullParserException {
         final float horizontalGap = isSpacer() ? 0 : params.mHorizontalGap;
+        final float verticalGap = isSpacer() ? 0 : params.mVerticalGap;
         final int rowHeight = row.getRowHeight();
         mHeight = rowHeight - params.mVerticalGap;
 
@@ -253,8 +254,8 @@ public class Key implements Comparable<Key> {
         mX = Math.round(keyXPos + horizontalGap / 2);
         mY = keyYPos;
         mWidth = Math.round(keyWidth - horizontalGap);
-        mHitBox.set(Math.round(keyXPos), keyYPos, Math.round(keyXPos + keyWidth) + 1,
-                keyYPos + rowHeight);
+        mHitBox.set(Math.round(keyXPos), Math.round(keyYPos - verticalGap / 2), Math.round(keyXPos + keyWidth) + 1,
+                Math.round(keyYPos + rowHeight - verticalGap / 2));
         // Update row to have current x coordinate.
         row.setXPos(keyXPos + keyWidth);
 
