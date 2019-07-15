@@ -1,1 +1,1 @@
-include ':app:sample', ':app:calculator', ':app:OnyxLatinIME', ':app:music', ':app:deskclock'
+include ':app:sample', ':app:calculator', ':app:OnyxLatinIME', ':app:music', ':app:deskclock', ':app:memoryfilesample'
